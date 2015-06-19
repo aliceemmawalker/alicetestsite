@@ -1,0 +1,123 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+
+<body>
+<script type="text/javascript">
+
+var userChoice = prompt("Do you choose rock, paper or scissors?");
+var computerChoice = Math.random();
+if (computerChoice < 0.34) {
+    computerChoice = "rock";
+} else if(computerChoice <= 0.67) {
+    computerChoice = "paper";
+} else {
+    computerChoice = "scissors";
+}
+
+window.alert("The computer chose " + computerChoice);
+
+var compare = function(choice1, choice2) {
+    if(choice1 === choice2) {
+    window.alert("The result is a tie!");
+}
+if(choice1 === "rock") {
+    if(choice2 === "scissors") {
+        window.alert("rock wins");
+    } else {
+      window.alert("paper wins");
+      
+
+    }
+}
+if(choice1 === "paper") {
+    if(choice2 === "rock") {
+        window.alert("paper wins");
+    } else {
+        if(choice2 === "scissors") {
+            window.alert("scissors wins");
+            
+    }
+}
+if(choice1 === "scissors") {
+    if(choice2 === "rock") {
+        window.alert("rock wins");
+    } else {
+        if(choice2 === "paper") {
+            window.alert("scissors wins");
+
+        }
+    }
+}
+}
+};
+console.log("User Choice: " + userChoice);
+console.log("Computer Choice: " + computerChoice);
+compare(userChoice, computerChoice);
+
+window.alert("And you're still really gay");
+
+
+</script>
+
+
+</body>
+</html>
+
+
+////////
+
+
+function playFunction() {
+var userChoice = prompt("Do you choose rock, paper or scissors?");
+var computerChoice = Math.random();
+if (computerChoice < 0.34) {
+    computerChoice = "rock";
+} else if(computerChoice <= 0.67) {
+    computerChoice = "paper";
+} else {
+    computerChoice = "scissors";
+}
+
+document.write("The computer chose "+ computerChoice);
+
+var compare = function(choice1, choice2) {
+    if(choice1 === choice2) {
+      window.alert("The result is a tie!");
+}
+if(choice1 === "rock") {
+    if(choice2 === "scissors") {
+        window.alert("rock wins");
+    } else {
+        window.alert("paper wins");
+    }
+}
+if(choice1 === "paper") {
+    if(choice2 === "rock") {
+        window.alert("paper wins");
+    } else {
+        if(choice2 === "scissors") {
+            window.alert("scissors wins");
+    }
+}
+if(choice1 === "scissors") {
+    if(choice2 === "rock") {
+        window.alert("rock wins");
+    } else {
+        if(choice2 === "paper") {
+           window.alert("scissors wins");
+        }
+    }
+}
+}
+};
+window.alert("...And you're still really gay");
+console.log("User Choice: " + userChoice);
+console.log("Computer Choice: " + computerChoice);
+compare(userChoice, computerChoice)
+} 
+
+
